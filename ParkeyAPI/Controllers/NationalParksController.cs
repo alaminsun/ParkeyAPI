@@ -32,7 +32,7 @@ namespace ParkeyAPI.Controllers
             return Ok(objDto);
         }
 
-        [HttpGet("{nationalParkId:int}")]
+        [HttpGet("{nationalParkId:int}", Name = "GetNationalPark")]
         public IActionResult GetNationalPark(int nationalParkId)
         {
             var obj = _npRepo.GetNationalPark(nationalParkId);
@@ -70,9 +70,51 @@ namespace ParkeyAPI.Controllers
                 return StatusCode(500, ModelState);
             }
 
-            return Ok();
+            return CreatedAtRoute("GetNationalPark", new { nationalParkId = nationalParkObj.Id }, nationalParkObj);
         }
 
+        [HttpPatch("{nationalParkId:int}", Name = "UpdateNationalPark")]
+        public IActionResult UpdateNationalPark(int nationalParkId, [FromBody] NationalParkDto nationalParkDto)
+        {
+            if (nationalParkDto == null || nationalParkId != nationalParkDto.Id)
+            {
+                return BadRequest(ModelState);
+            }
+            //if (_npRepo.NationalParkExists(nationalParkDto.Name))
+            //{
+            //    ModelState.AddModelError("", "National Park Exists!");
+            //    return StatusCode(404, ModelState);
+            //}
+            var nationalParkObj = _mapper.Map<NationalPark>(nationalParkDto);
+
+            if (!_npRepo.UpadteNationalPark(nationalParkObj))
+            {
+                ModelState.AddModelError("", $"Something went wrong when updating the record {nationalParkObj.Name}");
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+
+        }
+
+        [HttpDelete("{nationalParkId:int}", Name = "DeleteNationalPark")]
+        public IActionResult DeleteNationalPark(int nationalParkId)
+        {
+            if (!_npRepo.NationalParkExists(nationalParkId))
+            {
+                return NotFound();
+            }
+            var nationalParkObj = _npRepo.GetNationalPark(nationalParkId);
+
+            if (!_npRepo.DeleteNatinalPark(nationalParkObj))
+            {
+                ModelState.AddModelError("", $"Something went wrong when deleting the record {nationalParkObj.Name}");
+                return StatusCode(500, ModelState);
+            }
+
+            return NoContent();
+
+        }
 
     }
 }

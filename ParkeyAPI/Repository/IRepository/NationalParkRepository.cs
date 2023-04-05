@@ -53,7 +53,7 @@ namespace ParkeyAPI.Repository.IRepository
             return _db.SaveChanges() >= 0 ? true : false;
         }
 
-        public bool UpadteNatinalPark(NationalPark nationalPark)
+        public bool UpadteNationalPark(NationalPark nationalPark)
         {
             _db.NationalParks.Update(nationalPark);
             return Save();
