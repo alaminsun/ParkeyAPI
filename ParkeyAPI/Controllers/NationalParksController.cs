@@ -18,7 +18,10 @@ namespace ParkeyAPI.Controllers
             _npRepo = npRepo;
             _mapper = mapper;
         }
-
+        /// <summary>
+        /// Get list of national parks.
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetNatinalParks()
         {
@@ -32,6 +35,11 @@ namespace ParkeyAPI.Controllers
             return Ok(objDto);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nationalParkId">The Id of the national park</param>
+        /// <returns></returns>
         [HttpGet("{nationalParkId:int}", Name = "GetNationalPark")]
         public IActionResult GetNationalPark(int nationalParkId)
         {
@@ -41,6 +49,13 @@ namespace ParkeyAPI.Controllers
                 return NotFound();
             }
             var objDto = _mapper.Map<NationalParkDto>(obj);
+            //var objDto = new NationalParkDto()
+            //{
+            //    Created = obj.Created,
+            //    Id = obj.Id,
+            //    Name = obj.Name,
+            //    State = obj.State
+            //};
             return Ok(objDto);
         }
 

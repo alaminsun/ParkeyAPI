@@ -8,6 +8,9 @@ using Microsoft.OpenApi.Models;
 using ParkeyAPI.Data;
 using ParkeyAPI.Repository.IRepository;
 using ParkeyAPI.ParkeyMapper;
+using System.Reflection;
+using System.IO;
+using System;
 
 namespace ParkeyAPI
 {
@@ -30,6 +33,9 @@ namespace ParkeyAPI
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ParkeyAPI", Version = "v1" });
+                var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var cmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
+                c.IncludeXmlComments(cmlCommentsFullPath);
             });
         }
 
