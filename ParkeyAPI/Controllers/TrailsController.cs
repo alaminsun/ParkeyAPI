@@ -60,7 +60,7 @@ namespace ParkeyAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTrail([FromBody] TrailDto trailDto)
+        public IActionResult CreateTrail([FromBody] TrailCreateDto trailDto)
         {
             if (trailDto == null)
             {
@@ -89,7 +89,7 @@ namespace ParkeyAPI.Controllers
         }
 
         [HttpPatch("{trailId:int}", Name = "UpdateTrail")]
-        public IActionResult UpdateTrail(int trailId, [FromBody] TrailDto trailDto)
+        public IActionResult UpdateTrail(int trailId, [FromBody] TrailUpdateDto trailDto)
         {
             if (trailDto == null || trailId != trailDto.Id)
             {
