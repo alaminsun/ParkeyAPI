@@ -28,6 +28,7 @@ namespace ParkeyAPI
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<INationalParkRepository, NationalParkRepository>();
+            services.AddScoped<ITrailRepository, TrailRepository>();
             services.AddAutoMapper(typeof(ParkeyMappings));
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -79,7 +79,7 @@ namespace ParkeyAPI.Controllers
 
             var nationalParkObj = _mapper.Map<NationalPark>(nationalParkDto);
 
-            if (!_npRepo.CreateNatinalPark(nationalParkObj))
+            if (!_npRepo.CreateNationalPark(nationalParkObj))
             {
                 ModelState.AddModelError("", $"Something went wrong when save the record {nationalParkObj.Name}");
                 return StatusCode(500, ModelState);
@@ -121,7 +121,7 @@ namespace ParkeyAPI.Controllers
             }
             var nationalParkObj = _npRepo.GetNationalPark(nationalParkId);
 
-            if (!_npRepo.DeleteNatinalPark(nationalParkObj))
+            if (!_npRepo.DeleteNationalPark(nationalParkObj))
             {
                 ModelState.AddModelError("", $"Something went wrong when deleting the record {nationalParkObj.Name}");
                 return StatusCode(500, ModelState);
