@@ -38,12 +38,12 @@ namespace ParkeyAPI.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="TrailId">The Id of the trail</param>
+        /// <param name="trailId">The Id of the trail</param>
         /// <returns></returns>
-        [HttpGet("{TrailId:int}", Name = "GetTrail")]
-        public IActionResult GetTrail(int TrailId)
+        [HttpGet("{trailId:int}", Name = "GetTrail")]
+        public IActionResult GetTrail(int trailId)
         {
-            var obj = _trailRepo.GetTrail(TrailId);
+            var obj = _trailRepo.GetTrail(trailId);
             if (obj == null)
             {
                 return NotFound();
@@ -60,15 +60,15 @@ namespace ParkeyAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateTrail([FromBody] TrailDto TrailDto)
+        public IActionResult CreateTrail([FromBody] TrailDto trailDto)
         {
-            if (TrailDto == null)
+            if (trailDto == null)
             {
                 return BadRequest(ModelState);
             }
-            if (_trailRepo.TrailExists(TrailDto.Name))
+            if (_trailRepo.TrailExists(trailDto.Name))
             {
-                ModelState.AddModelError("", "Trail Park Exists!");
+                ModelState.AddModelError("", "Trail Exists!");
                 return StatusCode(404, ModelState);
             }
 
@@ -77,21 +77,21 @@ namespace ParkeyAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var TrailObj = _mapper.Map<Trail>(TrailDto);
+            var trailObj = _mapper.Map<Trail>(trailDto);
 
-            if (!_trailRepo.CreateTrail(TrailObj))
+            if (!_trailRepo.CreateTrail(trailObj))
             {
-                ModelState.AddModelError("", $"Something went wrong when save the record {TrailObj.Name}");
+                ModelState.AddModelError("", $"Something went wrong when save the record {trailObj.Name}");
                 return StatusCode(500, ModelState);
             }
 
-            return CreatedAtRoute("GetTrail", new { TrailId = TrailObj.Id }, TrailObj);
+            return CreatedAtRoute("GetTrail", new { trailId = trailObj.Id }, trailObj);
         }
 
         [HttpPatch("{TrailId:int}", Name = "UpdateTrail")]
-        public IActionResult UpdateTrail(int TrailId, [FromBody] TrailDto TrailDto)
+        public IActionResult UpdateTrail(int trailId, [FromBody] TrailDto trailDto)
         {
-            if (TrailDto == null || TrailId != TrailDto.Id)
+            if (trailDto == null || trailId != trailDto.Id)
             {
                 return BadRequest(ModelState);
             }
@@ -100,11 +100,11 @@ namespace ParkeyAPI.Controllers
             //    ModelState.AddModelError("", "Trail Exists!");
             //    return StatusCode(404, ModelState);
             //}
-            var TrailObj = _mapper.Map<Trail>(TrailDto);
+            var trailObj = _mapper.Map<Trail>(trailDto);
 
-            if (!_trailRepo.UpadteTrail(TrailObj))
+            if (!_trailRepo.UpadteTrail(trailObj))
             {
-                ModelState.AddModelError("", $"Something went wrong when updating the record {TrailObj.Name}");
+                ModelState.AddModelError("", $"Something went wrong when updating the record {trailObj.Name}");
                 return StatusCode(500, ModelState);
             }
 
@@ -113,17 +113,17 @@ namespace ParkeyAPI.Controllers
         }
 
         [HttpDelete("{TrailId:int}", Name = "DeleteTrail")]
-        public IActionResult DeleteTrail(int TrailId)
+        public IActionResult DeleteTrail(int trailId)
         {
-            if (!_trailRepo.TrailExists(TrailId))
+            if (!_trailRepo.TrailExists(trailId))
             {
                 return NotFound();
             }
-            var TrailObj = _trailRepo.GetTrail(TrailId);
+            var trailObj = _trailRepo.GetTrail(trailId);
 
-            if (!_trailRepo.DeleteTrail(TrailObj))
+            if (!_trailRepo.DeleteTrail(trailObj))
             {
-                ModelState.AddModelError("", $"Something went wrong when deleting the record {TrailObj.Name}");
+                ModelState.AddModelError("", $"Something went wrong when deleting the record {trailObj.Name}");
                 return StatusCode(500, ModelState);
             }
 
