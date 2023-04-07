@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "D:\\Project\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IT BD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj": {}
-  },
-  "projects": {
-    "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
-        "projectName": "ParkeyAPI",
-        "projectPath": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,11 +86,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
->>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45
         }
       }
     }

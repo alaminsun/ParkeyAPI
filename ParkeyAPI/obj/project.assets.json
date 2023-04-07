@@ -6356,16 +6356,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\IT BD\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\user\\.nuget\\packages\\": {}
->>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\Project\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
       "projectName": "ParkeyAPI",
       "projectPath": "D:\\Project\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
@@ -6374,16 +6369,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IT BD\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
-      "projectName": "ParkeyAPI",
-      "projectPath": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\ParkeyAPI.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Software\\Development\\ParkeyAPI\\ParkeyAPI\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6455,12 +6440,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
->>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Project\\ParkeyAPI\\ParkeyAPI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

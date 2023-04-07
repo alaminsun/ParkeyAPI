@@ -88,7 +88,7 @@ namespace ParkeyAPI.Controllers
             return CreatedAtRoute("GetTrail", new { trailId = trailObj.Id }, trailObj);
         }
 
-        [HttpPatch("{TrailId:int}", Name = "UpdateTrail")]
+        [HttpPatch("{trailId:int}", Name = "UpdateTrail")]
         public IActionResult UpdateTrail(int trailId, [FromBody] TrailDto trailDto)
         {
             if (trailDto == null || trailId != trailDto.Id)
@@ -112,7 +112,7 @@ namespace ParkeyAPI.Controllers
 
         }
 
-        [HttpDelete("{TrailId:int}", Name = "DeleteTrail")]
+        [HttpDelete("{trailId:int}", Name = "DeleteTrail")]
         public IActionResult DeleteTrail(int trailId)
         {
             if (!_trailRepo.TrailExists(trailId))
