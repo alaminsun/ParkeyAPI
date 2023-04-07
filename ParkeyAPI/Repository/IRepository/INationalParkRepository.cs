@@ -12,9 +12,9 @@ namespace ParkeyAPI.Repository.IRepository
         NationalPark GetNationalPark(int nationalParkId);
         bool NationalParkExists(string name);
         bool NationalParkExists(int id);
-        bool CreateNatinalPark(NationalPark nationalPark);
+        bool CreateNationalPark(NationalPark nationalPark);
         bool UpadteNationalPark(NationalPark nationalPark);
-        bool DeleteNatinalPark(NationalPark nationalPark);
+        bool DeleteNationalPark(NationalPark nationalPark);
         bool Save();
 
 

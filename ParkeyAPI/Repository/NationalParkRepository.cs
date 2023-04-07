@@ -15,13 +15,13 @@ namespace ParkeyAPI.Repository.IRepository
             _db = db;
         }
 
-        public bool CreateNatinalPark(NationalPark nationalPark)
+        public bool CreateNationalPark(NationalPark nationalPark)
         {
             _db.NationalParks.Add(nationalPark);
             return Save();
         }
 
-        public bool DeleteNatinalPark(NationalPark nationalPark)
+        public bool DeleteNationalPark(NationalPark nationalPark)
         {
             _db.NationalParks.Remove(nationalPark);
             return Save();

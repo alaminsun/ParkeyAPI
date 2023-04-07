@@ -62,6 +62,7 @@ G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\ref\ParkeyAPI.dll
 G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.pdb
 G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.genruntimeconfig.cache
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.xml
+<<<<<<< HEAD
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\appsettings.Development.json
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\appsettings.json
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.exe
@@ -127,3 +128,15 @@ D:\Project\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\refint\ParkeyAPI.dll
 D:\Project\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.pdb
 D:\Project\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.genruntimeconfig.cache
 D:\Project\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ref\ParkeyAPI.dll
+=======
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.csprojAssemblyReference.cache
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.GeneratedMSBuildEditorConfig.editorconfig
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.AssemblyInfoInputs.cache
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.AssemblyInfo.cs
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.csproj.CoreCompileInputs.cache
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.MvcApplicationPartsAssemblyInfo.cs
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.MvcApplicationPartsAssemblyInfo.cache
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.dll
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ref\ParkeyAPI.dll
+F:\Software\Development\ParkeyAPI\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.pdb
+>>>>>>> 29916c615e7b72012b787efb9f8ceb5ad1c8ac45

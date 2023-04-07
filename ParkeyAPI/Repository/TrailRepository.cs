@@ -16,13 +16,13 @@ namespace ParkeyAPI.Repository.IRepository
             _db = db;
         }
 
-        public bool CreateNatinalPark(Trail Trail)
+        public bool CreateTrail(Trail Trail)
         {
             _db.Trails.Add(Trail);
             return Save();
         }
 
-        public bool DeleteNatinalPark(Trail Trail)
+        public bool DeleteTrail(Trail Trail)
         {
             _db.Trails.Remove(Trail);
             return Save();
@@ -60,9 +60,10 @@ namespace ParkeyAPI.Repository.IRepository
             return Save();
         }
 
-        ICollection<Trail> ITrailRepository.GetTrailsInNationalPark(int npId)
+        public ICollection<Trail> GetTrailsInNationalPark(int npId)
         {
             return _db.Trails.Include(c => c.NationalPark).Where(C => C.NationalParkId == npId).ToList();
         }
+
     }
 }
