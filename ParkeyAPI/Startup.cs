@@ -33,7 +33,23 @@ namespace ParkeyAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ParkeyAPI", Version = "v1" });
+                c.SwaggerDoc("ParkeyOpenAPISpec", new OpenApiInfo 
+                { 
+                    Title = "ParkeyAPI", 
+                    Version = "v1",
+                    Description="Udemy Parkey API",
+                    Contact = new OpenApiContact()
+                    {
+                        Email= "alaminsun@yahoo.com",
+                        Name= "Md. Al-Amin",
+                        Url = new Uri("https://www.google.com")
+                    },
+                    License = new OpenApiLicense()
+                    {
+                        Name= "MIT License",
+                        Url= new Uri("https://www.google.com")
+                    }
+                });
                 var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var cmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentFile);
                 c.IncludeXmlComments(cmlCommentsFullPath);
