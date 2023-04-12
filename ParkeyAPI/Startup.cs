@@ -33,21 +33,38 @@ namespace ParkeyAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("ParkeyOpenAPISpec", new OpenApiInfo 
+                c.SwaggerDoc("ParkeyOpenAPISpecNP", new OpenApiInfo 
                 { 
-                    Title = "ParkeyAPI", 
+                    Title = "Parkey API (National Park)", 
                     Version = "v1",
-                    Description="Udemy Parkey API",
+                    Description = "Udemy Parkey API NP",
                     Contact = new OpenApiContact()
                     {
-                        Email= "alaminsun@yahoo.com",
-                        Name= "Md. Al-Amin",
+                        Email = "alaminsun@yahoo.com",
+                        Name = "Md. Al-Amin",
                         Url = new Uri("https://www.google.com")
                     },
                     License = new OpenApiLicense()
                     {
-                        Name= "MIT License",
-                        Url= new Uri("https://www.google.com")
+                        Name = "MIT License",
+                        Url = new Uri("https://www.google.com")
+                    }
+                });
+                c.SwaggerDoc("ParkeyOpenAPISpecTrails", new OpenApiInfo
+                {
+                    Title = "Parkey API Trails",
+                    Version = "v1",
+                    Description = "Udemy Parkey API Trails",
+                    Contact = new OpenApiContact()
+                    {
+                        Email = "alaminsun@yahoo.com",
+                        Name = "Md. Al-Amin",
+                        Url = new Uri("https://www.google.com")
+                    },
+                    License = new OpenApiLicense()
+                    {
+                        Name = "MIT License",
+                        Url = new Uri("https://www.google.com")
                     }
                 });
                 var xmlCommentFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -63,7 +80,14 @@ namespace ParkeyAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ParkeyAPI v1"));
+                app.UseSwaggerUI(option =>
+                {
+                    option.SwaggerEndpoint("/swagger/ParkeyOpenAPISpecNP/swagger.json", "Parkey API NP");
+                    option.SwaggerEndpoint("/swagger/ParkeyOpenAPISpecTrails/swagger.json", "Parkey API Trails");
+
+                });
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/ParkeyOpenAPISpecNP/swagger.json", "Parkey API NP"));
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/ParkeyOpenAPISpecTrails/swagger.json", "Parkey API Trails"));
             }
 
             app.UseHttpsRedirection();
