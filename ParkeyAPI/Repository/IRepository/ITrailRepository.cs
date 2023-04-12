@@ -13,9 +13,9 @@ namespace ParkeyAPI.Repository.IRepository
         Trail GetTrail(int trailId);
         bool TrailExists(string name);
         bool TrailExists(int id);
-        bool CreateNatinalPark(Trail Trail);
+        bool CreateTrail(Trail Trail);
         bool UpadteTrail(Trail Trail);
-        bool DeleteNatinalPark(Trail Trail);
+        bool DeleteTrail(Trail Trail);
         bool Save();
 
 

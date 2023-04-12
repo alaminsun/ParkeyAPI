@@ -21,6 +21,6 @@ namespace ParkeyAPI.Models
         public int NationalParkId { get; set; }
         [ForeignKey("NationalParkId")]
         public NationalPark NationalPark { get; set; }
-        public DateTime DateCreated { get; set; }
+
     }
 }
