@@ -7,9 +7,10 @@ using System.Collections.Generic;
 
 namespace ParkeyAPI.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/trails")]
     [ApiController]
-    [ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecTrails")]
+    //[ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecTrails")]
     public class TrailsController : Controller
     {
         private ITrailRepository _trailRepo;
