@@ -7,9 +7,11 @@ using System.Collections.Generic;
 
 namespace ParkeyAPI.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/nationalparks")]
+    [ApiVersion("1.0")]
     [ApiController]
-    [ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecNP")]
+    //[ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecNP")]
     public class NationalParksController : Controller
     {
         private INationalParkRepository _npRepo;
