@@ -198,3 +198,5 @@ G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.pdb
 G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\ParkeyAPI.genruntimeconfig.cache
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
