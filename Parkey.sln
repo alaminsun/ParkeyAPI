@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32602.291
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkeyAPI", "ParkeyAPI\ParkeyAPI.csproj", "{22BC3B1F-4C20-4284-9A3A-9938A776FC17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkeyAPI", "ParkeyAPI\ParkeyAPI.csproj", "{22BC3B1F-4C20-4284-9A3A-9938A776FC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkeyWeb", "ParkeyWeb\ParkeyWeb.csproj", "{B68AB6F6-58BA-4E0F-8DEA-5095C423EF49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{22BC3B1F-4C20-4284-9A3A-9938A776FC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22BC3B1F-4C20-4284-9A3A-9938A776FC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22BC3B1F-4C20-4284-9A3A-9938A776FC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68AB6F6-58BA-4E0F-8DEA-5095C423EF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68AB6F6-58BA-4E0F-8DEA-5095C423EF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68AB6F6-58BA-4E0F-8DEA-5095C423EF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68AB6F6-58BA-4E0F-8DEA-5095C423EF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
