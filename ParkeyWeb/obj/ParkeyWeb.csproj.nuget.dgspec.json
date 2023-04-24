@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\ParkeyAPI\\ParkeyWeb\\ParkeyWeb.csproj": {}
+    "G:\\Project\\Parkey\\ParkeyWeb\\ParkeyWeb.csproj": {}
   },
   "projects": {
-    "D:\\Project\\ParkeyAPI\\ParkeyWeb\\ParkeyWeb.csproj": {
+    "G:\\Project\\Parkey\\ParkeyWeb\\ParkeyWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\ParkeyAPI\\ParkeyWeb\\ParkeyWeb.csproj",
+        "projectUniqueName": "G:\\Project\\Parkey\\ParkeyWeb\\ParkeyWeb.csproj",
         "projectName": "ParkeyWeb",
-        "projectPath": "D:\\Project\\ParkeyAPI\\ParkeyWeb\\ParkeyWeb.csproj",
-        "packagesPath": "C:\\Users\\IT BD\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\ParkeyAPI\\ParkeyWeb\\obj\\",
+        "projectPath": "G:\\Project\\Parkey\\ParkeyWeb\\ParkeyWeb.csproj",
+        "packagesPath": "C:\\Users\\al-amin\\.nuget\\packages\\",
+        "outputPath": "G:\\Project\\Parkey\\ParkeyWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IT BD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\al-amin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net5.0": {
@@ -55,11 +55,16 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.14, 5.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
