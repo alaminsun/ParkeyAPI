@@ -26,7 +26,7 @@ namespace ParkeyWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<INationalParkRepository,NationalParkRepository>();
-            services.AddScoped<ITrailRepository, ITrailRepository>();
+            services.AddScoped<ITrailRepository, TrailRepository>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddHttpClient();
         }

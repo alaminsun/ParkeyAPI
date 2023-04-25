@@ -26,7 +26,7 @@ namespace ParkeyAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult GetNatinalParks()
+        public IActionResult GetNationalParks()
         {
             var objList = _npRepo.GetNationalParks();
             var objDto = new List<NationalParkDto>();
