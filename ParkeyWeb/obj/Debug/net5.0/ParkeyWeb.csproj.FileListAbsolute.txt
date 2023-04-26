@@ -755,7 +755,6 @@ G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Work
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\ParkeyWeb.csproj.AssemblyReference.cache
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\NationalParks\Index.cshtml.g.cs
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\NationalParks\Upsert.cshtml.g.cs
 D:\Project\ParkeyAPI\ParkeyWeb\bin\Debug\net5.0\Humanizer.dll
@@ -806,3 +805,6 @@ D:\Project\ParkeyAPI\ParkeyWeb\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotn
 D:\Project\ParkeyAPI\ParkeyWeb\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\NationalParks\Index.cshtml.g.cs
 D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\NationalParks\Upsert.cshtml.g.cs
+G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Index.cshtml.g.cs
+G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Upsert.cshtml.g.cs
+G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\ParkeyWeb.csproj.AssemblyReference.cache
