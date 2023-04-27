@@ -160,7 +160,6 @@ G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.d
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
-G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -200,3 +199,4 @@ G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

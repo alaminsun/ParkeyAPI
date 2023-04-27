@@ -12,7 +12,7 @@ namespace ParkeyAPI.Controllers
     [ApiVersion("1.0")]
     [ApiController]
     //[ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecNP")]
-    public class NationalParksController : Controller
+    public class NationalParksController : ControllerBase
     {
         private INationalParkRepository _npRepo;
         private readonly IMapper _mapper;

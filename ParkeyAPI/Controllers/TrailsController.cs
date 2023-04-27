@@ -11,7 +11,7 @@ namespace ParkeyAPI.Controllers
     [Route("api/v{version:apiVersion}/trails")]
     [ApiController]
     //[ApiExplorerSettings(GroupName = "ParkeyOpenAPISpecTrails")]
-    public class TrailsController : Controller
+    public class TrailsController : ControllerBase
     {
         private ITrailRepository _trailRepo;
         private readonly IMapper _mapper;
