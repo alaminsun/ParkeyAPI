@@ -61,6 +61,9 @@ namespace ParkeyAPI.Migrations
                     b.Property<double>("Distance")
                         .HasColumnType("float");
 
+                    b.Property<double>("Elevation")
+                        .HasColumnType("float");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -73,6 +76,27 @@ namespace ParkeyAPI.Migrations
                     b.HasIndex("NationalParkId");
 
                     b.ToTable("Trails");
+                });
+
+            modelBuilder.Entity("ParkeyAPI.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ParkeyAPI.Models.Trail", b =>

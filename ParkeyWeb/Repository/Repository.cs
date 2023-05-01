@@ -48,7 +48,7 @@ namespace ParkeyWeb.Repository
 
             var client = _clientFactory.CreateClient();
             HttpResponseMessage response = await client.SendAsync(request);
-            if (response.StatusCode == HttpStatusCode.NotFound)
+            if (response.StatusCode == HttpStatusCode.NoContent)
             {
                 return true;
             }
