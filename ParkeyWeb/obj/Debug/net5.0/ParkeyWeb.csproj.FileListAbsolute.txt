@@ -808,3 +808,5 @@ D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\NationalParks\Upsert
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Index.cshtml.g.cs
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Upsert.cshtml.g.cs
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\ParkeyWeb.csproj.AssemblyReference.cache
+D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Index.cshtml.g.cs
+D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Upsert.cshtml.g.cs
