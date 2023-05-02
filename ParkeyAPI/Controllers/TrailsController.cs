@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ParkeyAPI.Models;
 using ParkeyAPI.Models.Dtos;
@@ -43,6 +44,7 @@ namespace ParkeyAPI.Controllers
         /// <param name="trailId">The Id of the trail</param>
         /// <returns></returns>
         [HttpGet("{trailId:int}", Name = "GetTrail")]
+        [Authorize(Roles ="Admin")]
         public IActionResult GetTrail(int trailId)
         {
             var obj = _trailRepo.GetTrail(trailId);

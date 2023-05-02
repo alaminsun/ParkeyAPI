@@ -24,7 +24,7 @@ namespace ParkeyAPI.Controllers
         }
         [AllowAnonymous]
         [HttpPost("authenticate")]
-        public IActionResult Athenticate([FromBody] User model)
+        public IActionResult Athenticate([FromBody] AuthenticationModel model)
         {
             var user = _userRepo.Authenticate(model.Username, model.Password);
             if (user == null)
@@ -32,6 +32,24 @@ namespace ParkeyAPI.Controllers
                 return BadRequest(new { message = "Username or password is incorrect" });
             }
             return Ok(user);
+        }
+
+        [AllowAnonymous]
+        [HttpPost("register")]
+        public IActionResult Result([FromBody] AuthenticationModel model)
+        {
+            bool ifUserNameUnique = _userRepo.IsUniqueUser(model.Username);
+            if (!ifUserNameUnique)
+            {
+                return BadRequest(new { message = "Username already exists" });
+            }
+            var user = _userRepo.Register(model.Username, model.Password);
+
+            if (user == null)
+            {
+                return BadRequest(new { message = "Error while registering" });
+            }
+            return Ok();
         }
     }
 }
