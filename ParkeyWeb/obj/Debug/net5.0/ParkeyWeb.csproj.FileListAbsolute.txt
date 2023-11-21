@@ -361,7 +361,6 @@ G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ParkeyWeb.deps.json
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ParkeyWeb.runtimeconfig.json
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ParkeyWeb.runtimeconfig.dev.json
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ParkeyWeb.dll
-G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ref\ParkeyWeb.dll
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\ParkeyWeb.pdb
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 G:\Project\Parkey\ParkeyWeb\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -810,3 +809,4 @@ G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Upsert.cshtml.g.
 G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\ParkeyWeb.csproj.AssemblyReference.cache
 D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Index.cshtml.g.cs
 D:\Project\ParkeyAPI\ParkeyWeb\obj\Debug\net5.0\Razor\Views\Trails\Upsert.cshtml.g.cs
+G:\Project\Parkey\ParkeyWeb\obj\Debug\net5.0\refint\ParkeyWeb.dll

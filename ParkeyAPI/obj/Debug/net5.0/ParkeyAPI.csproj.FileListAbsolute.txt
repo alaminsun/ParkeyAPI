@@ -137,7 +137,6 @@ G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.deps.json
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.runtimeconfig.json
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.runtimeconfig.dev.json
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.dll
-G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ref\ParkeyAPI.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.pdb
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\ParkeyAPI.xml
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\AutoMapper.dll
@@ -200,3 +199,4 @@ D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Version
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 G:\Project\Parkey\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Project\ParkeyAPI\ParkeyAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\Project\Parkey\ParkeyAPI\obj\Debug\net5.0\refint\ParkeyAPI.dll
